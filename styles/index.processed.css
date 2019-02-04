@@ -1,0 +1,199 @@
+/**
+ * index.scss
+ * - Add any styles you want here!
+ */
+body {
+  background: #ffff;
+  font-size: 16px;
+}
+
+.heading {
+  font-size: 36px;
+  font-family: Arial;
+  line-height: 150%;
+  font-weight: bold;
+}
+
+.container{
+
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+
+}
+
+
+
+.list{
+  display: grid ;
+  grid-template-columns: 25% 25% 25% 5%;
+  grid-gap: 20px 20px;
+
+}
+
+
+  /*  The whole Card */
+.card {
+  
+  background-color: #FFF4D5;
+  color: #2C3A47;
+  border-right: .35em solid  #E17055;
+  border-bottom: .35em solid  #E17055;
+  width: 210px;
+  height: 210px;  
+  box-sizing: border-box;  
+  font-family: Arial;
+}
+/*  Card Mid Section*/
+.card_content {
+  color: #2C3A47;
+  padding: .2em;
+   
+}
+
+
+/* Description of the item below the HR*/
+.item_descp {
+  margin-top: 3px;
+ margin-bottom: 10px;
+  font-size: .8em;
+  position: relative;
+}
+/*Item Ouatity Top Left*/
+.item_qty {
+  float: right;
+  margin-top: -10px;
+  margin-right: 10px;
+  margin-bottom:none;
+  color: #E17055;
+  font-family: Arial;
+  font-weight: normal;
+  
+}
+
+.center_content{
+  padding-left: .2em;
+  padding-right: .2em;
+  height: 100px;
+  
+}
+
+/*Item Category Bottom Right*/
+.item_cat {
+  position: relative;
+  margin-top: 50px;
+  color: #E17055;
+  font-family: Arial regular san-serif;
+  font-size: 16px;
+  text-transform: uppercase; 
+  font-family: Arial;
+}
+/*Item Heading */
+.item_name {
+  font-size: 36px;
+  padding-top: 1em;
+  margin-bottom: -8px;
+  position: relative;
+  font-weight: bold;
+  font-family: Arial;
+}
+
+hr {
+  height: 3px;
+  background-color: #2C3A47;
+  opacity: 0.35;
+  border: none;
+  
+}
+
+h3{
+  margin-bottom: 0px;
+ 
+}
+
+
+
+
+/* Desktop*/
+@media only screen and (min-width: 1200px) {
+    .container{
+      width: 100%;
+      align-content: center;
+      
+    }
+
+        .list {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        justify-items: center;
+        grid-row-gap: 18%;
+        grid-column-gap: .1em;
+
+      }
+}
+
+@media only screen and 
+        (min-width:1024px) and 
+        (max-width:1200px) {
+          .container{
+            width: 100%;
+            align-content: center;
+            padding: 0 15px 0 15px;
+          }
+     
+          .list{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);;
+            justify-items: center;
+            grid-row-gap: 15%;
+            /* grid-column-gap: 10%; */
+
+            width: 100%;
+            align-content: center;
+            padding: 0 15px 0 15px;
+          }
+
+        }
+
+/* Tablet */
+@media only screen and 
+        (min-width:768px) and 
+        (max-width:1024px) {
+      .container{
+        width: 100%;
+        align-content: center;
+        padding: 0 15px 0 15px;
+      }
+ 
+      .list{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);;
+        justify-items: center;
+        grid-row-gap: 15%;
+        grid-column-gap: 10%;
+        width: 100%;
+        align-content: center;
+        padding: 0 15px 0 15px;
+      }
+
+  
+}
+
+/*Mobile*/
+@media only screen and  
+        (min-width:320px)  and 
+        (max-width: 767px) {
+          .list{
+            display: grid;
+            grid-template-columns: 100%;
+            /* column-count: 1; */
+            grid-row-gap: 2%;
+            padding: 1em;
+            align-content: center;
+          }
+          .card{
+            width: 100%;
+          }
+
+}
